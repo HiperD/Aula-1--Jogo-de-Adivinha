@@ -10,8 +10,6 @@ let idade;
 
 let nome;
 
-console.log(numero);
-
 let numero = parseInt(pronpt("Digite um numero inteiro:"));
 if(Number.isInteger(numero)){
     alert("Parabéns, você acertou!!!  :)");
