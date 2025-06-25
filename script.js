@@ -9,7 +9,7 @@ let chute;
 let idade;
 
 let nome;
-let entrada = pronpt("Digite um numero inteiro:");
+let entrada = prompt("Digite um numero inteiro:");
 let numero = parseInt(entrada);
 if(Number.isInteger(numero)){
     alert("Parabéns, você acertou!!!  :)");
@@ -17,5 +17,5 @@ if(Number.isInteger(numero)){
 }
 else{
     alert("Você errou!!!  :(");
-    console.log(("Você errou!!!  :("));
+    console.log("Você errou!!!  :(");
 }
