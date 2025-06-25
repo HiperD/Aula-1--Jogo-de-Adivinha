@@ -4,9 +4,6 @@ alert("ele é limitado ao clique no ok pelo usuario")
 
 alert("Não é soccilvio config seu tempo de permanencia na tela")
 
-
-let numero = 30;
-
 let chute;
 
 let idade;
@@ -14,3 +11,12 @@ let idade;
 let nome;
 
 console.log(numero);
+
+let numero = parseInt(pronpt("Digite um numero inteiro:"));
+if(Number.isInteger(numero)){
+    alert("Parabéns, você acertou!!!  :)")
+    console.log
+}
+else{
+    alert("Você errou!!!  :(")
+}
