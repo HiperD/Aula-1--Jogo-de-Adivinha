@@ -14,9 +14,10 @@ console.log(numero);
 
 let numero = parseInt(pronpt("Digite um numero inteiro:"));
 if(Number.isInteger(numero)){
-    alert("Parabéns, você acertou!!!  :)")
-    console.log
+    alert("Parabéns, você acertou!!!  :)");
+    console.log("Parabéns, você acertou!!!  :);
 }
 else{
-    alert("Você errou!!!  :(")
+    alert("Você errou!!!  :(");
+    console.log(("Você errou!!!  :("));
 }
