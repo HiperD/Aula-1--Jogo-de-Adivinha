@@ -5,7 +5,7 @@ alert("ele é limitado ao clique no ok pelo usuario")
 alert("Não é soccilvio config seu tempo de permanencia na tela")
 
 
-let numero = 25
+let numero = 30;
 
 let chute;
 
