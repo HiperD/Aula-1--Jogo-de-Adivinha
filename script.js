@@ -1,21 +1,22 @@
-alert("oieeeeeeeeeee")
+alert('Seja bem-vindo ao nosso jogo!');
 
-alert("ele é limitado ao clique no ok pelo usuario")
+// Gera um número secreto aleatório entre 1 e 100
+const numeroSecreto = Math.floor(Math.random() * 100) + 1;
+console.log(numeroSecreto); // (Para testes, pode remover depois)
 
-alert("Não é soccilvio config seu tempo de permanencia na tela")
-
+// Variável para armazenar o chute do usuário
 let chute;
+let tentativas = 0; // Inicia o contador de tentativas
 
-let idade;
+while (chute != numeroSecreto) {
+  chute = parseInt(prompt('Escolha um número entre 1 e 100'));
+  tentativas++; // Soma +1 a cada tentativa
 
-let nome;
-let entrada = prompt("Digite um numero inteiro:");
-let numero = parseInt(entrada);
-if(Number.isInteger(numero)){
-    alert("Parabéns, você acertou!!!  :)");
-    console.log("Parabéns, você acertou!!!  :)");
-}
-else{
-    alert("Você errou!!!  :(");
-    console.log("Você errou!!!  :(");
+  if (chute == numeroSecreto) {
+    alert(`Parabéns! Você acertou o número secreto ${numeroSecreto} na tentativa ${tentativas}.`);
+  } else if (chute > numeroSecreto) {
+    alert(`O número secreto é menor que ${chute}. Tente novamente.`);
+  } else {
+    alert(`O número secreto é maior que ${chute}. Tente novamente.`);
+  }
 }
